@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A Oficina — Seminário de Pesquisa</title>
+<meta name="description" content="A Oficina — as quatro ferramentas do Seminário de Pesquisa do PPGD/FADISP: O Arquiteto, O Alinhador, O Interrogador e O Parecerista.">
+<style>
+  :root{
+    --navy:#1B2A4A; --navy-deep:#12203B; --navy-mid:#243558;
+    --gold:#C9A84C; --gold-soft:#E8D9A8;
+    --paper:#F5F2EB; --white:#fff;
+    --ink:#1A2236; --text-mid:#3D4F6E; --text-light:#7A8BA5;
+    --border:#D4C9A8;
+    --shadow:0 4px 20px rgba(27,42,74,.13);
+    --radius:10px;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);
+       font-family:'Segoe UI',system-ui,sans-serif;line-height:1.55}
+
+  header{background:var(--navy);color:var(--white);padding:0}
+  .bar{height:4px;background:var(--gold)}
+  .head-inner{max-width:960px;margin:0 auto;padding:26px 20px 22px}
+  .head-inner h1{font-family:Georgia,'Times New Roman',serif;font-size:40px;
+       letter-spacing:.5px;margin:0;font-weight:700}
+  .head-inner .sub{font-size:13px;color:var(--gold-soft);margin-top:4px;letter-spacing:.3px}
+
+  main{max-width:960px;margin:0 auto;padding:34px 20px 60px}
+
+  .abertura{font-family:Georgia,serif;font-size:17px;color:var(--text-mid);
+       max-width:640px;margin:0 0 8px}
+  .abertura strong{color:var(--ink)}
+  .lema{font-family:Georgia,serif;font-style:italic;color:var(--navy);
+       border-left:3px solid var(--gold);padding:6px 0 6px 14px;margin:22px 0 34px;
+       max-width:640px;font-size:15px}
+
+  h2.secao{font-family:Georgia,serif;font-size:14px;letter-spacing:1.6px;
+       text-transform:uppercase;color:var(--text-light);font-weight:600;
+       margin:0 0 4px}
+  .secao-nota{font-size:13px;color:var(--text-mid);margin:0 0 20px;max-width:640px}
+
+  .grade{display:grid;grid-template-columns:repeat(auto-fit,minmax(268px,1fr));gap:18px}
+
+  .porta{background:var(--white);border:1px solid var(--border);border-radius:var(--radius);
+       padding:22px 22px 18px;display:flex;flex-direction:column;box-shadow:var(--shadow);
+       position:relative;overflow:hidden}
+  .porta::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--gold)}
+  .ordem{font-size:11px;letter-spacing:1.4px;color:var(--text-light);text-transform:uppercase}
+  .porta h3{font-family:Georgia,serif;font-size:23px;margin:6px 0 2px;color:var(--navy)}
+  .faz{font-size:14px;color:var(--ink);margin:8px 0 0}
+  .quando{font-size:13px;color:var(--text-mid);margin:12px 0 0;
+       border-top:1px dashed var(--border);padding-top:12px}
+  .quando b{color:var(--navy);font-weight:600}
+  .entrar{margin-top:18px;display:inline-block;text-align:center;text-decoration:none;
+       background:var(--navy);color:var(--white);padding:11px 16px;border-radius:6px;
+       font-size:14px;font-weight:600;transition:background .15s}
+  .entrar:hover{background:var(--navy-mid)}
+  .entrar.breve{background:var(--paper);color:var(--text-light);
+       border:1px dashed var(--border);cursor:default;font-weight:500}
+
+  .rodape{margin-top:46px;border-top:1px solid var(--border);padding-top:18px;
+       font-size:13px;color:var(--text-mid);display:flex;flex-wrap:wrap;gap:8px 22px;
+       align-items:baseline;justify-content:space-between}
+  .rodape a{color:var(--navy);font-weight:600}
+  .creditos{font-size:12px;color:var(--text-light);margin-top:10px}
+
+  @media(max-width:600px){
+    .head-inner h1{font-size:32px}
+    .abertura{font-size:16px}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="bar"></div>
+  <div class="head-inner">
+    <h1>A Oficina</h1>
+    <div class="sub">Seminário de Pesquisa · Programa de Pós-Graduação em Direito · FADISP</div>
+  </div>
+</header>
+
+<main>
+  <p class="abertura">
+    Aqui moram as quatro ferramentas do <strong>Seminário de Pesquisa</strong>. Nenhuma delas
+    escreve por você, corrige o seu texto ou entrega resposta pronta: elas perguntam, apertam
+    e devolvem o problema para as suas mãos.
+  </p>
+  <p class="lema">
+    O melhor uso da inteligência artificial não é reduzir o esforço — é qualificar a pesquisa.
+  </p>
+
+  <h2 class="secao">O percurso</h2>
+  <p class="secao-nota">
+    As quatro podem ser usadas isoladamente, mas esta é a ordem natural do trabalho: primeiro
+    desenhar, depois alinhar, depois aguentar a pergunta, por fim escrever e ser lido.
+  </p>
+
+  <div class="grade">
+
+    <article class="porta">
+      <div class="ordem">Primeira porta</div>
+      <h3>O Arquiteto</h3>
+      <p class="faz">Ajuda a desenhar o percurso metodológico da pesquisa e a enxergar mais de um
+        caminho possível para o mesmo problema.</p>
+      <p class="quando"><b>Quando entrar:</b> o tema existe, mas o desenho da pesquisa ainda não.</p>
+      <a class="entrar" href="https://oarquitetofadisp.com" target="_blank" rel="noopener">Entrar</a>
+    </article>
+
+    <article class="porta">
+      <div class="ordem">Segunda porta</div>
+      <h3>O Alinhador</h3>
+      <p class="faz">Audita a coerência interna da cadeia tema → pergunta → hipótese → objetivos e
+        devolve até cinco perguntas sobre os desalinhamentos que encontrar.</p>
+      <p class="quando"><b>Quando entrar:</b> a cadeia já está escrita e precisa se sustentar de pé.</p>
+      <a class="entrar" href="https://oalinhadorfadisp.com" target="_blank" rel="noopener">Entrar</a>
+    </article>
+
+    <article class="porta">
+      <div class="ordem">Terceira porta</div>
+      <h3>O Interrogador</h3>
+      <p class="faz">Argui o projeto de pesquisa como uma pré-banca: pergunta, insiste, volta ao
+        ponto frágil e guarda o histórico do diálogo.</p>
+      <p class="quando"><b>Quando entrar:</b> o projeto está de pé e precisa suportar arguição.</p>
+      <a class="entrar" href="https://ointerrogadorfadisp.com" target="_blank" rel="noopener">Entrar</a>
+    </article>
+
+    <article class="porta">
+      <div class="ordem">Quarta porta</div>
+      <h3>O Parecerista</h3>
+      <p class="faz">Lê o que você já escreveu com o rigor de um revisor de periódico — ou de um
+        membro de banca — e devolve parecer ou arguição sobre o texto.</p>
+      <p class="quando"><b>Quando entrar:</b> há texto escrito e ele precisa ser lido sem complacência.</p>
+      <a class="entrar" href="https://opareceristafadisp.com" target="_blank" rel="noopener">Entrar</a>
+    </article>
+
+  </div>
+
+  <div class="rodape">
+    <div>Procurando banca, créditos ou secretaria? Isso fica no
+      <a href="https://mestradoedoutorado.alfa.br/aluno/login" target="_blank" rel="noopener">Portal Élis</a>.
+    </div>
+  </div>
+  <p class="creditos">
+    Ferramentas concebidas pela Profª Cíntia Brunetta para o Seminário de Pesquisa
+    do PPGD/FADISP.
+  </p>
+</main>
+
+</body>
+</html>
