@@ -5,17 +5,25 @@ Pesquisa (PPGD/FADISP):
 
 | Porta | App | Endereço |
 |---|---|---|
-| 1ª | O Alinhador | https://oalinhadorfadisp.com |
-| 2ª | O Arquiteto | https://oarquitetofadisp.com |
-| 3ª | O Interrogador | https://ointerrogadorfadisp.com |
+| 1ª | O Interrogador | https://ointerrogadorfadisp.com |
+| 2ª | O Alinhador | https://oalinhadorfadisp.com |
+| 3ª | O Arquiteto | https://oarquitetofadisp.com |
 | 4ª | O Parecerista | https://opareceristafadisp.com |
 
-A ordem dos cards é a ordem do trabalho: alinhar a cadeia → desenhar o método →
-aguentar a pergunta → ser lido.
+A ordem dos cards é a ordem do trabalho: interrogar a pesquisa → alinhar a
+cadeia → desenhar o método → ser lido.
 
-**Não inverter Alinhador e Arquiteto.** O método obedece à pergunta, não ao
-pesquisador: sem clareza e refinamento da pergunta e da hipótese não há o que
-desenhar. (Regra da Profª Cíntia Brunetta, 22/08/2026.)
+**A ordem é regra da disciplina, não arranjo visual** (Profª Cíntia Brunetta,
+22/08/2026):
+
+- o **Interrogador** vem primeiro porque interroga a própria pesquisa — pergunta,
+  hipótese, lacuna a preencher, referenciais teóricos;
+- o **Alinhador** vem depois: ele confere se as peças encaixam entre si, o que
+  pressupõe peças com substância;
+- o **Arquiteto** só entra aí, porque **o método obedece à pergunta, não ao
+  pesquisador** — sem clareza e refinamento da pergunta e da hipótese não há o
+  que desenhar;
+- o **Parecerista** fecha, lendo o que já virou texto.
 
 ## Estrutura
 
