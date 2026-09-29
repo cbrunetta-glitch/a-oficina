@@ -3,93 +3,110 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>A Oficina — Seminário de Pesquisa</title>
-<meta name="description" content="A Oficina — as quatro ferramentas do Seminário de Pesquisa do PPGD/FADISP: O Arquiteto, O Alinhador, O Interrogador e O Parecerista.">
+<title>A Oficina — ferramentas de pesquisa do PPGD</title>
+<meta name="description" content="A Oficina — quatro ferramentas pedagógicas para o refinamento da pesquisa acadêmica, para mestrandos, doutorandos e professores do PPGD/FADISP: O Interrogador, O Alinhador, O Arquiteto e O Parecerista.">
 <style>
+  /* Identidade do Élis (mestradoedoutorado.alfa.br), desde 29/09/2026:
+     faixa vermelha com a marca em branco, fundo cinza-claro, cartões brancos,
+     botões pretos arredondados. Os sistemas da Escola de Direito se leem juntos. */
   :root{
-    --navy:#1B2A4A; --navy-deep:#12203B; --navy-mid:#243558;
-    --gold:#C9A84C; --gold-soft:#E8D9A8;
-    --paper:#F7F5F0; --white:#fff;
-    --ink:#1A2236; --text-mid:#3D4F6E; --text-light:#7A8BA5;
-    --border:#D4C9A8;
-    --shadow:0 4px 20px rgba(27,42,74,.13);
-    --radius:10px;
+    --vermelho:#D92322; --vermelho-escuro:#B51B1A;
+    --fundo:#F2F3F5; --branco:#fff;
+    --tinta:#1A1A1A; --texto-medio:#4A4F57; --texto-leve:#7A808A;
+    --borda:#E3E5E8; --preto:#111;
+    --sombra:0 6px 20px rgba(0,0,0,.08);
+    --raio:16px;
   }
   *{box-sizing:border-box}
-  body{margin:0;background:var(--paper);color:var(--ink);
+  body{margin:0;background:var(--fundo);color:var(--tinta);
        font-family:'Segoe UI',system-ui,sans-serif;line-height:1.55}
 
-  header{background:var(--navy);color:var(--white);padding:0}
-  .bar{height:4px;background:var(--gold)}
-  .head-inner{max-width:960px;margin:0 auto;padding:26px 20px 22px}
+  header{background:var(--vermelho);color:var(--branco)}
+  .head-inner{max-width:1000px;margin:0 auto;padding:22px 20px;
+       display:flex;align-items:center;gap:26px}
+  .head-inner img{height:52px;width:auto;flex:none;max-width:100%}
+  .head-inner>div{min-width:0}
+  .head-inner .separador{width:1px;align-self:stretch;background:rgba(255,255,255,.6);flex:none}
   .head-inner h1{font-family:Georgia,'Times New Roman',serif;font-size:40px;
-       letter-spacing:.5px;margin:0;font-weight:700}
-  .head-inner .sub{font-size:13px;color:var(--gold-soft);margin-top:4px;letter-spacing:.3px}
+       letter-spacing:.5px;margin:0;font-weight:700;line-height:1.1}
+  .head-inner .sub{font-size:14px;color:rgba(255,255,255,.9);margin-top:4px;letter-spacing:.3px}
 
-  main{max-width:960px;margin:0 auto;padding:34px 20px 60px}
+  main{max-width:1000px;margin:0 auto;padding:30px 20px 60px}
 
-  .abertura{font-family:Georgia,serif;font-size:17px;color:var(--text-mid);
-       max-width:640px;margin:0 0 8px}
-  .abertura strong{color:var(--ink)}
-  .lema{font-family:Georgia,serif;font-style:italic;color:var(--navy);
-       border-left:3px solid var(--gold);padding:6px 0 6px 14px;margin:22px 0 34px;
-       max-width:640px;font-size:15px}
+  .apresenta{display:flex;background:var(--branco);border:1px solid var(--borda);
+       border-radius:var(--raio);box-shadow:var(--sombra);overflow:hidden;margin:0 0 34px}
+  .apresenta .rotulo{background:var(--vermelho);color:var(--branco);flex:none;width:200px;
+       display:flex;align-items:center;justify-content:center;padding:20px;
+       font-family:Georgia,serif;font-size:22px;font-weight:700;text-align:center}
+  .apresenta .corpo{padding:22px 26px}
+  .abertura{font-size:16.5px;color:var(--texto-medio);margin:0}
+  .abertura strong{color:var(--tinta)}
+  .lema{font-family:Georgia,serif;font-style:italic;color:var(--tinta);
+       margin:14px 0 0;font-size:15.5px}
 
-  h2.secao{font-family:Georgia,serif;font-size:14px;letter-spacing:1.6px;
-       text-transform:uppercase;color:var(--text-light);font-weight:600;
-       margin:0 0 4px}
-  .secao-nota{font-size:13px;color:var(--text-mid);margin:0 0 20px;max-width:640px}
+  h2.secao{font-family:Georgia,serif;font-size:28px;color:var(--tinta);
+       font-weight:700;margin:0 0 6px;text-align:center}
+  .secao-nota{font-size:14px;color:var(--texto-medio);margin:0 auto 24px;max-width:680px;text-align:center}
 
-  .grade{display:grid;grid-template-columns:repeat(auto-fit,minmax(268px,1fr));gap:18px}
+  .grade{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr));gap:18px}
 
-  .porta{background:var(--white);border:1px solid var(--border);border-radius:var(--radius);
-       padding:22px 22px 18px;display:flex;flex-direction:column;box-shadow:var(--shadow);
-       position:relative;overflow:hidden}
-  .porta::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--gold)}
-  .ordem{font-size:11px;letter-spacing:1.4px;color:var(--text-light);text-transform:uppercase}
-  .porta h3{font-family:Georgia,serif;font-size:23px;margin:6px 0 2px;color:var(--navy)}
-  .faz{font-size:14px;color:var(--ink);margin:8px 0 0}
-  .quando{font-size:13px;color:var(--text-mid);margin:12px 0 0;
-       border-top:1px dashed var(--border);padding-top:12px}
-  .quando b{color:var(--navy);font-weight:600}
-  .entrar{margin-top:18px;display:inline-block;text-align:center;text-decoration:none;
-       background:var(--navy);color:var(--white);padding:11px 16px;border-radius:6px;
-       font-size:14px;font-weight:600;transition:background .15s}
-  .entrar:hover{background:var(--navy-mid)}
-  .entrar.breve{background:var(--paper);color:var(--text-light);
-       border:1px dashed var(--border);cursor:default;font-weight:500}
+  .porta{background:var(--branco);border:1px solid var(--borda);border-radius:var(--raio);
+       padding:22px 22px 20px;display:flex;flex-direction:column;box-shadow:var(--sombra)}
+  .ordem{align-self:flex-start;font-size:11px;letter-spacing:1.2px;color:var(--vermelho-escuro);
+       text-transform:uppercase;font-weight:700;background:#FBE9E9;border-radius:999px;padding:3px 10px}
+  .porta h3{font-family:Georgia,serif;font-size:22px;margin:12px 0 2px;color:var(--tinta)}
+  .faz{font-size:14px;color:var(--tinta);margin:8px 0 0;flex:1}
+  .quando{font-size:13px;color:var(--texto-medio);margin:12px 0 0;
+       border-top:1px solid var(--borda);padding-top:12px}
+  .quando b{color:var(--tinta);font-weight:600}
+  .entrar{margin-top:18px;display:block;text-align:center;text-decoration:none;
+       background:var(--preto);color:var(--branco);padding:11px 16px;border-radius:999px;
+       font-size:15px;font-weight:600;transition:background .15s;
+       box-shadow:0 4px 10px rgba(0,0,0,.15)}
+  .entrar:hover{background:var(--vermelho)}
 
-  .rodape{margin-top:46px;border-top:1px solid var(--border);padding-top:18px;
-       font-size:13px;color:var(--text-mid);display:flex;flex-wrap:wrap;gap:8px 22px;
-       align-items:baseline;justify-content:space-between}
-  .rodape a{color:var(--navy);font-weight:600}
-  .creditos{font-size:12px;color:var(--text-light);margin-top:10px}
+  .rodape{margin-top:40px;background:var(--vermelho);color:var(--branco);
+       border-radius:var(--raio);padding:18px 24px;font-size:14px}
+  .rodape a{color:var(--branco);font-weight:700}
+  .creditos{font-size:12.5px;color:var(--texto-leve);margin-top:14px;text-align:center}
 
-  @media(max-width:600px){
+  @media(max-width:700px){
+    .head-inner{flex-wrap:wrap;gap:14px}
+    .head-inner .separador{display:none}
     .head-inner h1{font-size:32px}
-    .abertura{font-size:16px}
+    .apresenta{flex-direction:column}
+    .apresenta .rotulo{width:auto}
   }
 </style>
 </head>
 <body>
 
 <header>
-  <div class="bar"></div>
   <div class="head-inner">
-    <h1>A Oficina</h1>
-    <div class="sub">Seminário de Pesquisa · Doutorado em Direito · FADISP</div>
+    <img src="logo-alfa-branco.png" alt="ALFA Escola de Direito — UNIALFA · FADISP">
+    <span class="separador"></span>
+    <div>
+      <h1>A Oficina</h1>
+      <div class="sub">Ferramentas de pesquisa · Mestrado e Doutorado em Direito · FADISP</div>
+    </div>
   </div>
 </header>
 
 <main>
-  <p class="abertura">
-    Aqui moram as quatro ferramentas do <strong>Seminário de Pesquisa</strong>. Nenhuma delas
-    escreve por você, corrige o seu texto ou entrega resposta pronta: elas perguntam, apertam
-    e devolvem o problema para as suas mãos.
-  </p>
-  <p class="lema">
-    O melhor uso da inteligência artificial não é reduzir o esforço — é qualificar a pesquisa.
-  </p>
+  <section class="apresenta">
+    <div class="rotulo">O que é a Oficina?</div>
+    <div class="corpo">
+      <p class="abertura">
+        Aqui moram quatro <strong>ferramentas pedagógicas para o refinamento da pesquisa
+        acadêmica</strong>, para mestrandos, doutorandos e professores do Programa. Nenhuma delas
+        escreve por você, corrige o seu texto ou entrega resposta pronta: elas perguntam, apertam
+        e devolvem o problema para as suas mãos.
+      </p>
+      <p class="lema">
+        O melhor uso da inteligência artificial não é reduzir o esforço — é qualificar a pesquisa.
+      </p>
+    </div>
+  </section>
 
   <h2 class="secao">O percurso</h2>
   <p class="secao-nota">
@@ -143,13 +160,12 @@
   </div>
 
   <div class="rodape">
-    <div>Procurando banca, créditos ou secretaria? Isso fica no
-      <a href="https://mestradoedoutorado.alfa.br/aluno/login" target="_blank" rel="noopener">Portal Élis</a>.
-    </div>
+    Procurando banca, créditos ou secretaria? Isso fica no
+    <a href="https://mestradoedoutorado.alfa.br/aluno/login" target="_blank" rel="noopener">Portal Élis</a>.
   </div>
   <p class="creditos">
-    Ferramentas concebidas pela Profª Cíntia Brunetta para o Seminário de Pesquisa
-    do PPGD/FADISP.
+    Ferramentas concebidas pela Profª Cíntia Brunetta, Coordenação da Escola de Direito —
+    nascidas no Seminário de Pesquisa e hoje abertas a todo o PPGD/FADISP.
   </p>
 </main>
 

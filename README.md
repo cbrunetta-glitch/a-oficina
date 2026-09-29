@@ -1,7 +1,9 @@
 # A Oficina
 
-Ambiente único onde residem as quatro ferramentas pedagógicas do Seminário de
-Pesquisa (PPGD/FADISP):
+Ambiente único onde residem as quatro ferramentas pedagógicas para o
+refinamento da pesquisa acadêmica, para mestrandos, doutorandos e professores do
+PPGD/FADISP. Nasceram no Seminário de Pesquisa e hoje servem ao Programa inteiro
+(descrição revista pela Profª Cíntia Brunetta em 29/09/2026):
 
 | Porta | App | Endereço |
 |---|---|---|
@@ -54,3 +56,11 @@ Qualquer alteração precisa de commit + push; a Vercel redeploya sozinha.
 Próximos passos previstos (ainda não implementados): identidade única por
 matrícula via Supabase, painel único da professora, e a pesquisa como objeto
 compartilhado entre as quatro ferramentas.
+
+## Identidade visual
+
+Desde 29/09/2026 segue a do Élis (https://mestradoedoutorado.alfa.br): faixa
+vermelha `#D92322` com a marca ALFA Escola de Direito em branco
+(`logo-alfa-branco.png`, a mesma usada pela Goiandira), fundo cinza-claro,
+cartões brancos arredondados e botões pretos. Os sistemas da Escola de Direito
+se leem como um conjunto.
